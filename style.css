@@ -1,0 +1,70 @@
+:root {
+  --fundo: #c8a27a;
+  --destaque: #d9480f;
+  --postit: #fff3a8;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #2b2118;
+  background: var(--fundo);
+}
+
+header, footer {
+  text-align: center;
+  padding: 16px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+}
+
+input, textarea, button {
+  font: inherit;
+  padding: 8px;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  background: var(--destaque);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contador {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Mural e post-its */
+.mural {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.postit {
+  width: 200px;
+  padding: 12px;
+  background: var(--postit);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  overflow-wrap: break-word;
+}

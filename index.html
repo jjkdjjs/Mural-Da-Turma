@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mural da Turma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mural da Turma</h1>
+    <p>Deixe um recado para a galera</p>
+  </header>
+
+  <main>
+    <!-- Formulário recado -->
+    <form id="form-recado">
+      <label for="campo-nome">Seu nome</label>
+      <input id="campo-nome" type="text" maxlength="30" placeholder="Ex.: Ana" required>
+
+      <label for="campo-texto">Recado</label>
+      <textarea id="campo-texto" maxlength="200" rows="3" placeholder="Escreva algo legal..." required></textarea>
+
+      <button type="submit">Colar no mural</button>
+    </form>
+
+    <!-- Mostra recados -->
+    <p id="contador" class="contador"></p>
+    <section id="mural" class="mural"></section>
+  </main>
+
+  <footer>
+    Mural da Turma | versão <span id="versao"></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
